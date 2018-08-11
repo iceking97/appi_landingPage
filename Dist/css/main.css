@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+  color: #fff;
+  overflow: hidden; }
+  body#bg-image {
+    background: url("../img/background1.png");
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-image::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: linear-gradient(rgba(10, 161, 47, 0.9) 20%, black); }
+
+h1,
+h3,
+p {
+  margin: 0;
+  font-weight: 400; }
+  h1.main-title,
+  h3.main-title,
+  p.main-title {
+    margin-top: 1.5rem;
+    font-size: 5.5rem;
+    text-shadow: 4px 2px rgba(0, 0, 0, 0.7); }
+    h1.main-title .text-secondary,
+    h3.main-title .text-secondary,
+    p.main-title .text-secondary {
+      color: white; }
+      h1.main-title .text-secondary:hover,
+      h3.main-title .text-secondary:hover,
+      p.main-title .text-secondary:hover {
+        color: darkgreen;
+        transition: all 0.5s ease-out;
+        transform: rotate(180deg);
+        cursor: pointer; }
+  h1.sub-title,
+  h3.sub-title,
+  p.sub-title {
+    margin-top: 2rem;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    font-weight: 600; }
+  h1.extra,
+  h3.extra,
+  p.extra {
+    background: rgba(255, 255, 255, 0.1);
+    align-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: #610646;
+    font-weight: 550; }
+    h1.extra:hover,
+    h3.extra:hover,
+    p.extra:hover {
+      color: #eece1a;
+      background: rgba(97, 6, 70, 0.1);
+      transition: all 0.5s ease-out; }
+
+main {
+  padding: 8rem;
+  /*align-items: center;
+  justify-content: center;
+  text-align: center;*/ }
+  main icon a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 0.4rem; }
+    main icon a:hover {
+      color: #0aa12f;
+      transition: all 0.5s ease-out;
+      font: 3rem; }
+
+@media screen and (min-width: 1171px) {
+  main {
+    transition: all 0.5s ease-out; }
+    main h1.main-title {
+      font-size: 5rem;
+      line-height: 4.75rem;
+      text-align: center; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    transition: all 0.5s ease-out;
+    padding: 5rem; }
+    main h1.main-title {
+      font-size: 5rem;
+      line-height: 5rem;
+      text-align: center; }
+    main p.extra {
+      margin-bottom: 40rem; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 3rem;
+    transition: all 0.5s ease-out; }
+  h1.main-title {
+    font-size: 5rem;
+    line-height: 4rem;
+    text-align: center;
+    transition: all 0.5s ease-out; } }
+
+@media screen and (max-width: 500px) {
+  main {
+    transition: all 0.5s ease-out; }
+  h1.main-title {
+    font-size: 2rem; }
+    h1.main-title .text-secondary {
+      font-size: 4rem; } }

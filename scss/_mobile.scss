@@ -1,0 +1,58 @@
+@include mediaXl {
+  main {
+    //padding: 5rem;
+    @include easeout;
+
+    h1.main-title {
+      font-size: 5rem;
+      line-height: 4.75rem;
+      text-align: center;
+    }
+    h3.sub-title {
+      //margin-bottom: 4rem;
+    }
+  }
+}
+
+@include mediaLg {
+  main {
+    @include easeout;
+    padding: 5rem;
+
+    h1.main-title {
+      font-size: 5rem;
+      line-height: 5rem;
+      text-align: center;
+    }
+
+    p.extra {
+      margin-bottom: 40rem;
+    }
+  }
+}
+
+@include mediaMd {
+  main {
+    padding: 3rem;
+    @include easeout;
+  }
+  h1.main-title {
+    font-size: 5rem;
+    line-height: 4rem;
+    text-align: center;
+    @include easeout;
+  }
+}
+
+@include mediaSm {
+  main {
+    @include easeout;
+  }
+  h1.main-title {
+    font-size: 2rem;
+
+    .text-secondary {
+      font-size: 4rem;
+    }
+  }
+}
